@@ -3,8 +3,6 @@
 
 from setuptools import find_packages, setup
 
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
 
 install_requires_replacements = {
     'git+https://github.com/matrix-org/matrix-python-sdk.git': 'matrix-client',
@@ -38,7 +36,6 @@ setup(
         ],
     },
     install_requires=requirements,
-    long_description=readme,
     include_package_data=True,
     keywords='pathfinding_service',
     name='pathfinding_service',
